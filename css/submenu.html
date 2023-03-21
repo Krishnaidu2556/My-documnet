@@ -1,0 +1,64 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            margin: 0%;
+        }
+        .main
+        {
+            height: 80px;
+            width: 100%;
+            background-color: bisque;
+        }
+        .mainlist   
+        {
+            list-style: none;
+            float: left;
+            padding: 10px 20px;
+            line-height: 50px;
+            font-size: 25px;
+        }
+        .sub
+        {
+            height: 100px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: 0%;
+            margin-top:15px;
+            visibility: hidden;
+        }
+        .sublist
+        {
+            list-style: none;
+            
+        }
+        .mainlist:hover .sub
+        {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <ul class="main">
+        <li class="mainlist">Home</li>
+        <li class="mainlist">Service
+            <ul class="sub">
+                <li class="sublist">Page 1</li>
+                <li class="sublist">Page 2</li>
+            </ul>
+        </li>
+        <li class="mainlist">Blog</li>
+        <li class="mainlist">About us</li>
+        <li class="mainlist">contact us</li>
+    </ul>
+</body>
+</html>

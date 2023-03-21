@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="input" type="text" placeholder="enter the number">
+    <button class='button' onclick="change()">sublit</button>
+<img src="1.webp" alt="" id="image" style="width: 100px;height: ;">
+
+    <script>
+        function change() {
+            var answers = document.getElementById("input").value;
+            if (answers == 1) {
+                // image = '<img src="1.webp"></img>';
+                document.getElementById("image").src="1.webp";
+
+            }
+            else if (answers == 2) {
+                // image = '<img src="2.webp"></img>';
+                document.getElementById("image").src="2.webp";
+
+
+            }
+            else if (answers == 3) {
+                // image = '<img src="3.jpeg"></img>';
+                document.getElementById("image").src="1.jpeg";
+
+            }
+            else {
+                alert("enter valid number")
+            }
+            document.getElementById("image").innerHTML = image;
+        }
+    </script>
+</body>
+</html>

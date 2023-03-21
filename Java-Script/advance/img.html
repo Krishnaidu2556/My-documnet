@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <input type="submit" value="marvel" onClick="onbulb()">
+        <img src="dc.avif" id="myimage" height="400px" width="400px" onmouseover="onbulb()"
+            onmouseout="offbulb()">
+        <input type="submit" value="dc" onClick="offbulb()">
+        <script>
+            function onbulb() {
+                var img = document.getElementById("myimage");
+                img.src="marvel.avif";
+            }
+
+            function offbulb() {
+                var img = document.getElementById("myimage");
+                img.src = "dc.avif";
+            }
+        </script>
+</body>
+</html>
